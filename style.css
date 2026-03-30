@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #020617;
+  color: #e2e8f0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f8fafc;
+}
+
+h2, h3 {
+  color: #38bdf8;
+}
+
+.hero {
+  padding: 80px 0;
+}
+
+.intro {
+  margin: 20px 0;
+  color: #cbd5e1;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: #38bdf8;
+  color: #020617;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: #0f172a;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.project-card {
+  background: #0f172a;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.project-card a {
+  color: #38bdf8;
+}
+
+.more-projects {
+  margin-top: 10px;
+}
+
+.about, .contact {
+  margin-top: 40px;
+}
