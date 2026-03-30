@@ -7,119 +7,142 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header class="hero">
-  <div class="container">
-    <p class="eyebrow">HELLO, I'm</p>
-    <h1>Oluwatosin Soyemi</h1>
-    <h2>Junior DevOps / Cloud Engineer</h2>
-    <p class="intro">
-      I build cloud infrastructure, CI/CD pipelines, and deployment workflows using
-      Docker, GitHub Actions, AWS, Jenkins, Linux, and automation tools.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="https://github.com/OluwatosinSoyemi" target="_blank" class="btn btn-outline">GitHub</a>
-      <a href="#contact" class="btn btn-outline">Contact</a>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">OS.</div>
+      <div class="nav-links">
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-  </div>
-</header>
+  </nav>
 
-<section class="stack">
-  <div class="container">
-    <h3>Tech Stack</h3>
-    <div class="tags">
-      <span>Docker</span>
-      <span>GitHub Actions</span>
-      <span>AWS</span>
-      <span>Jenkins</span>
-      <span>Linux</span>
-      <span>Nginx</span>
-      <span>Terraform</span>
-      <span>Ansible</span>
-      <span>Kubernetes</span>
-      <span>Python</span>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="projects">
-  <div class="container">
-    <h3>Featured Projects</h3>
-
-    <div class="project-card">
-      <h4>Internal Utility Service Capstone</h4>
-      <p>
-        Production-ready deployment project with Docker, GitHub Actions, AWS EC2,
-        Nginx, HTTPS, health checks, secrets management, and rollback strategy.
+  <header class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">DEVOPS / CLOUD ENGINEER</p>
+      <h1>Hi, I'm <span>Oluwatosin Soyemi</span></h1>
+      <p class="hero-text">
+        I build cloud infrastructure, CI/CD pipelines, deployment workflows, and automation
+        projects using AWS, Docker, GitHub Actions, Jenkins, Linux, and GitOps practices.
       </p>
-      <a href="https://github.com/OluwatosinSoyemi/internal-utility-service-capstone" target="_blank">
-        View Project →
-      </a>
-    </div>
 
-    <div class="project-card">
-      <h4>GitOps Style Workflow Project</h4>
-      <p>
-        GitOps-style workflow using Trello, GitHub, and GitHub Actions to enforce
-        structured branching, commit conventions, testing, and controlled merges.
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/OluwatosinSoyemi" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="https://www.linkedin.com/in/oluwatosin-soyemi/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="stack" class="section">
+    <div class="container">
+      <p class="section-label">TECH STACK</p>
+      <h2>Tools I Work With</h2>
+
+      <div class="stack-grid">
+        <div class="stack-card">AWS</div>
+        <div class="stack-card">Docker</div>
+        <div class="stack-card">GitHub Actions</div>
+        <div class="stack-card">Jenkins</div>
+        <div class="stack-card">Linux</div>
+        <div class="stack-card">Nginx</div>
+        <div class="stack-card">CI/CD</div>
+        <div class="stack-card">GitOps</div>
+        <div class="stack-card">Flask</div>
+        <div class="stack-card">Bash</div>
+        <div class="stack-card">Python</div>
+        <div class="stack-card">Git</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt-section">
+    <div class="container">
+      <p class="section-label">FEATURED PROJECTS</p>
+      <h2>Things I’ve Built</h2>
+      <p class="section-text">
+        These projects show my hands-on work in deployment, automation, CI/CD, and infrastructure workflows.
       </p>
-      <a href="https://github.com/OluwatosinSoyemi/Git-Ops-Style" target="_blank">
-        View Project →
-      </a>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-badge">AWS • Docker • GitHub Actions</span>
+          </div>
+          <h3>Internal Utility Service Capstone</h3>
+          <p>
+            Production-ready deployment project with Docker, GitHub Actions, AWS EC2,
+            Nginx, HTTPS, health checks, secrets management, and rollback strategy.
+          </p>
+          <a href="https://github.com/OluwatosinSoyemi/internal-utility-service-capstone" target="_blank">
+            View Project →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-badge">GitOps • GitHub • CI</span>
+          </div>
+          <h3>GitOps Style Workflow Project</h3>
+          <p>
+            GitOps-style workflow using Trello, GitHub, and GitHub Actions to enforce structured
+            branching, commit conventions, testing, and controlled merges.
+          </p>
+          <a href="https://github.com/OluwatosinSoyemi/Git-Ops-Style" target="_blank">
+            View Project →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-badge">Jenkins • Docker • Java</span>
+          </div>
+          <h3>Java CI/CD Pipeline</h3>
+          <p>
+            CI/CD pipeline project for a Java application using Jenkins, Docker,
+            and automated build workflows to demonstrate continuous integration and delivery.
+          </p>
+          <a href="https://github.com/OluwatosinSoyemi/java-cicd" target="_blank">
+            View Project →
+          </a>
+        </article>
+      </div>
+
+      <div class="more-link">
+        <a href="https://github.com/OluwatosinSoyemi" target="_blank">See more projects on GitHub →</a>
+      </div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h4>Java CI/CD Pipeline</h4>
-      <p>
-        CI/CD project for a Java application using Jenkins, Docker, and automated
-        build workflows.
-      </p>
-      <a href="https://github.com/OluwatosinSoyemi/java-cicd" target="_blank">
-        View Project →
-      </a>
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label">ABOUT ME</p>
+      <h2>Who I Am</h2>
+      <div class="about-box">
+        <p>
+          I am a junior DevOps engineer with hands-on project experience in cloud deployment,
+          automation, CI/CD pipelines, infrastructure workflows, and containerization.
+        </p>
+        <p>
+          I enjoy building practical systems that improve deployment speed, reliability,
+          and visibility, and I am currently seeking internship and entry-level DevOps roles.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <p class="more-projects">
-      <a href="https://github.com/OluwatosinSoyemi" target="_blank">
-        See more projects →
-      </a>
-    </p>
-  </div>
-</section>
-
-<section class="about">
-  <div class="container">
-    <h3>About Me</h3>
-    <p>
-      I am an aspiring DevOps engineer with hands-on experience in cloud deployment,
-      CI/CD pipelines, automation, and containerization.
-    </p>
-    <p>
-      I am currently seeking internship and entry-level DevOps roles.
-    </p>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="container">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:oluwatosinsoyemi9@gmail.com">oluwatosinsoyemi9@gmail.com</a></p>
-    <p>
-      GitHub:
-      <a href="https://github.com/OluwatosinSoyemi" target="_blank">
-        github.com/OluwatosinSoyemi
-      </a>
-    </p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/oluwatosin-soyemi/" target="_blank">
-        linkedin.com/in/oluwatosin-soyemi
-      </a>
-    </p>
-  </div>
-</section>
-
+  <section id="contact" class="section alt-section">
+    <div class="container">
+      <p class="section-label">CONTACT</p>
+      <h2>Let’s Connect</h2>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:oluwatosinsoyemi9@gmail.com">oluwatosinsoyemi9@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oluwatosin-soyemi/" target="_blank">linkedin.com/in/oluwatosin-soyemi</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/OluwatosinSoyemi" target="_blank">github.com/OluwatosinSoyemi</a></p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
