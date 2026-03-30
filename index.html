@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oluwatosin Soyemi | DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="top">
@@ -12,8 +15,9 @@
 
   <nav class="navbar">
     <div class="container nav-inner">
-      <div class="logo">O.Soyemi</div>
-      <div class="nav-links">
+      <a href="#top" class="logo">O.Soyemi</a>
+
+      <div class="nav-links desktop-nav">
         <a href="#stack">Stack</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -21,6 +25,21 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#learning">Learning</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -28,12 +47,10 @@
     <div class="container hero-grid">
       <div class="hero-left">
         <p class="eyebrow">DEVOPS / CLOUD ENGINEER</p>
-        <h1>Hi, I'm <span>Oluwatosin Soyemi</span></h1>
+        <h1>Hi, I'm Oluwatosin Soyemi — building reliable cloud infrastructure and delivery workflows.</h1>
         <p class="hero-text">
-          Entry-level DevOps Engineer with hands-on experience building CI/CD pipelines,
-          containerized applications, and cloud infrastructure on AWS. I enjoy working
-          on automation, deployment workflows, and scalable cloud solutions using
-          Docker, GitHub Actions, Jenkins, Terraform, Linux, and Ansible.
+          I’m a DevOps Engineer focused on automation, deployment workflows, and cloud infrastructure.
+          I enjoy building practical systems that improve reliability, scalability, and delivery.
         </p>
 
         <div class="hero-buttons">
@@ -51,19 +68,19 @@
           <div class="stats-grid">
             <div class="stat-box">
               <h4>4</h4>
-              <p>Core Projects</p>
+              <p>Featured Projects</p>
             </div>
             <div class="stat-box">
-              <h4>1+</h4>
-              <p>Years Experience</p>
+              <h4>AWS</h4>
+              <p>Cloud Deployment Focus</p>
+            </div>
+            <div class="stat-box">
+              <h4>CI/CD</h4>
+              <p>Automation & Delivery</p>
             </div>
             <div class="stat-box">
               <h4>10+</h4>
               <p>GitHub Repositories</p>
-            </div>
-            <div class="stat-box">
-              <h4>AWS</h4>
-              <p>Cloud & Automation Focus</p>
             </div>
           </div>
 
@@ -80,8 +97,7 @@
       <p class="section-label">TECH STACK</p>
       <h2>Tools I Work With</h2>
       <p class="section-text">
-        These are some of the cloud, automation, containerization, and CI/CD tools
-        I use in my DevOps projects and training.
+        Tools I’ve used across cloud, automation, containerization, monitoring, and CI/CD projects.
       </p>
 
       <div class="stack-grid">
@@ -89,57 +105,46 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS">
           <span>AWS</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
           <span>Docker</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions">
           <span>GitHub Actions</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins">
           <span>Jenkins</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
           <span>Linux</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx">
           <span>Nginx</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
           <span>Python</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform">
           <span>Terraform</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible">
           <span>Ansible</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
           <span>Kubernetes</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus">
           <span>Prometheus</span>
         </div>
-
         <div class="stack-card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana">
           <span>Grafana</span>
@@ -153,93 +158,61 @@
       <p class="section-label">FEATURED PROJECTS</p>
       <h2>Things I’ve Built</h2>
       <p class="section-text">
-        These projects show my hands-on work in cloud deployment, CI/CD automation,
+        These projects reflect my hands-on work in cloud deployment, CI/CD automation,
         Infrastructure as Code, and GitOps workflows.
       </p>
 
       <div class="projects-grid">
         <article class="project-card">
           <div class="project-number">Project 1</div>
-          <div class="project-image">GitOps Workflow Project</div>
+          <img src="github-actions-runs-page.png" alt="GitHub Actions workflow run showing successful CI checks" class="project-screenshot">
           <h3>GitOps Workflow &amp; CI Automation</h3>
-          <p class="tools-used">
-            <strong>Tools Used:</strong> GitHub Actions, GitHub, Trello, Git
-          </p>
+          <p class="tools-used"><strong>Tools Used:</strong> GitHub Actions, GitHub, Trello, Git</p>
           <p>
             Designed a GitOps workflow integrating GitHub, Trello, and CI pipelines.
             Enforced structured branching, pull request validation, and automated checks
             to improve code quality and delivery reliability.
           </p>
-          <p class="project-extra">
-            This project shows how automated validation can make team workflows more
-            consistent before code is merged into main branches.
-          </p>
-          <a href="https://github.com/OluwatosinSoyemi/Git-Ops-Style" target="_blank">
-            View Project →
-          </a>
+          <a href="https://github.com/OluwatosinSoyemi/Git-Ops-Style" target="_blank" class="project-link">View Project →</a>
         </article>
 
         <article class="project-card">
           <div class="project-number">Project 2</div>
-          <div class="project-image">Secure CI/CD on EC2</div>
+          <img src="architecture-diagram.png" alt="Architecture diagram for secure CI/CD deployment on AWS EC2" class="project-screenshot">
           <h3>Containerized Web App with Secure CI/CD &amp; EC2 Deployment</h3>
-          <p class="tools-used">
-            <strong>Tools Used:</strong> Docker, GitHub Actions, AWS EC2, Nginx, HTTPS, Linux
-          </p>
+          <p class="tools-used"><strong>Tools Used:</strong> Docker, GitHub Actions, AWS EC2, Nginx, HTTPS, Linux</p>
           <p>
             Built and deployed a production-ready containerized web application on AWS EC2.
             Implemented secure CI/CD workflows, reverse proxy setup with Nginx, HTTPS,
             health checks, and rollback strategies.
           </p>
-          <p class="project-extra">
-            This project demonstrates practical cloud deployment, automation, and
-            production hardening in a real DevOps environment.
-          </p>
-          <a href="https://github.com/OluwatosinSoyemi/internal-utility-service-capstone" target="_blank">
-            View Project →
-          </a>
+          <a href="https://github.com/OluwatosinSoyemi/internal-utility-service-capstone" target="_blank" class="project-link">View Project →</a>
         </article>
 
         <article class="project-card">
           <div class="project-number">Project 3</div>
           <div class="project-image">Jenkins CI/CD Pipeline</div>
           <h3>Automated CI/CD Pipeline with Jenkins &amp; Docker</h3>
-          <p class="tools-used">
-            <strong>Tools Used:</strong> Jenkins, Docker, Java, Maven, CI/CD
-          </p>
+          <p class="tools-used"><strong>Tools Used:</strong> Jenkins, Docker, Java, Maven, CI/CD</p>
           <p>
             Built a Jenkins pipeline to automate build, test, and deployment workflows.
             Integrated Docker for containerized delivery and improved consistency in
             application deployment processes.
           </p>
-          <p class="project-extra">
-            This project highlights continuous integration practices and better delivery
-            consistency through automation.
-          </p>
-          <a href="https://github.com/OluwatosinSoyemi/java-cicd" target="_blank">
-            View Project →
-          </a>
+          <a href="https://github.com/OluwatosinSoyemi/java-cicd" target="_blank" class="project-link">View Project →</a>
         </article>
 
         <article class="project-card">
           <div class="project-number">Project 4</div>
           <div class="project-image">Terraform AWS Setup</div>
           <h3>Terraform Infrastructure Setup on AWS</h3>
-          <p class="tools-used">
-            <strong>Tools Used:</strong> Terraform, AWS EC2, AWS S3
-          </p>
+          <p class="tools-used"><strong>Tools Used:</strong> Terraform, AWS EC2, AWS S3</p>
           <p>
             Provisioned AWS resources such as EC2 instances and S3 buckets using reusable
             Terraform configurations. Applied Infrastructure as Code principles for
             scalable and repeatable cloud deployment.
           </p>
-          <p class="project-extra">
-            This project demonstrates how cloud resources can be automated and managed
-            efficiently using Terraform.
-          </p>
-          <a href="https://github.com/OluwatosinSoyemi" target="_blank">
-            View GitHub →
-          </a>
+          <a href="https://github.com/OluwatosinSoyemi" target="_blank" class="project-link">View GitHub →</a>
         </article>
       </div>
 
@@ -252,36 +225,34 @@
   <section id="experience" class="section">
     <div class="container">
       <p class="section-label">EXPERIENCE</p>
-      <h2>Training & Experience</h2>
+      <h2>Training & Hands-On Experience</h2>
       <p class="section-text">
-        My experience includes practical cloud and DevOps training, project work,
-        and continuous hands-on development.
+        My experience includes structured DevOps training and practical project work across
+        deployment workflows, cloud infrastructure, automation, and system reliability.
       </p>
 
       <div class="experience-list">
         <div class="experience-card">
           <div class="experience-header">
-            <h3>Cloud &amp; DevOps Engineering</h3>
+            <h3>DevOps Trainee</h3>
             <span>September 2025 – Present</span>
           </div>
           <h4>Axia Africa</h4>
           <p>
-            Built CI/CD pipelines using GitHub Actions, containerized applications with Docker,
-            deployed solutions to AWS, automated infrastructure provisioning using Terraform,
-            and monitored application performance and system health.
+            Worked on hands-on DevOps projects involving CI/CD workflows, containerized applications,
+            cloud deployment, infrastructure provisioning, and monitoring.
           </p>
         </div>
 
         <div class="experience-card">
           <div class="experience-header">
-            <h3>DevOps &amp; Cloud Engineering</h3>
+            <h3>Cloud &amp; DevOps Trainee</h3>
             <span>May 2025 – July 2025</span>
           </div>
           <h4>Tech365</h4>
           <p>
-            Gained hands-on experience deploying containerized applications on AWS,
-            configuring Jenkins pipelines for CI/CD workflows, and using Linux and
-            Ansible for server management and automation.
+            Built practical experience in cloud deployment, automation, and server management through
+            guided training and project-based learning.
           </p>
         </div>
       </div>
@@ -303,23 +274,17 @@
 
   <section id="about" class="section">
     <div class="container">
-      <p class="section-label">ABOUT ME</p>
-      <h2>More About Me</h2>
+      <p class="section-label">ABOUT</p>
+      <h2>Who I Am</h2>
       <div class="about-box">
         <p>
-          I am an entry-level DevOps Engineer with hands-on experience in building
-          CI/CD pipelines, containerized applications, and cloud infrastructure on AWS.
-          My work focuses on automation, reliability, and scalable deployment workflows.
+          I’m a DevOps Engineer who enjoys building reliable systems, improving deployment workflows,
+          and making manual processes more efficient through automation.
         </p>
         <p>
-          I have completed practical training through Tech365 and Axia Africa, where I
-          worked on DevOps projects involving Docker, GitHub Actions, Jenkins, Terraform,
-          Ansible, Linux, Prometheus, and Grafana.
-        </p>
-        <p>
-          I enjoy turning manual processes into repeatable, automated workflows and I am
-          currently seeking internship and entry-level DevOps or Cloud Engineering roles
-          where I can continue to grow, contribute, and build production-ready systems.
+          I learn best by working on practical projects and solving real implementation problems.
+          I’m currently seeking internship and entry-level DevOps or Cloud Engineering opportunities
+          where I can continue growing and contribute to real-world infrastructure and delivery work.
         </p>
       </div>
     </div>
@@ -330,10 +295,15 @@
       <p class="section-label">CONTACT</p>
       <h2>Let’s Connect</h2>
       <div class="contact-box">
-        <p><strong>Email:</strong> <a href="mailto:oluwatosinsoyemi9@gmail.com">oluwatosinsoyemi9@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oluwatosin-soyemi/" target="_blank">linkedin.com/in/oluwatosin-soyemi</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/OluwatosinSoyemi" target="_blank">github.com/OluwatosinSoyemi</a></p>
-        <p><strong>Resume:</strong> <a href="Oluwatosin_Soyemi_DevOps_Resume.pdf" target="_blank">Open Resume PDF</a></p>
+        <p class="contact-intro">
+          I’m open to internship and entry-level DevOps or Cloud opportunities. You can reach me here:
+        </p>
+        <div class="contact-links">
+          <a class="contact-pill" href="mailto:oluwatosinsoyemi9@gmail.com">Email Me</a>
+          <a class="contact-pill" href="https://www.linkedin.com/in/oluwatosin-soyemi/" target="_blank">LinkedIn</a>
+          <a class="contact-pill" href="https://github.com/OluwatosinSoyemi" target="_blank">GitHub</a>
+          <a class="contact-pill" href="Oluwatosin_Soyemi_DevOps_Resume.pdf" target="_blank">View Resume</a>
+        </div>
       </div>
     </div>
   </section>
@@ -344,5 +314,24 @@
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileNav = document.getElementById("mobileNav");
+    const mobileLinks = mobileNav.querySelectorAll("a");
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("active");
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!expanded));
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
 </body>
 </html>
